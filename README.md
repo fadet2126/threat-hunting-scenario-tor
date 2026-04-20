@@ -41,7 +41,8 @@ DeviceFileEvents
 | order by Timestamp desc 
 |project Timestamp, DeviceId, DeviceName, ActionType, FileName, SHA256, InitiatingProcessAccountName 
 
-<img width="1508" src="SOC - Lab Portfolio/threatHuntingStep1-Image.png" alt="image of Advanced Hunting query result">
+```
+<img width="1508" src="SOC - Lab Portfolio/threatHuntingStep1-Image.png" alt="Advanced Hunting query result screenshot">
 
 ---
 
