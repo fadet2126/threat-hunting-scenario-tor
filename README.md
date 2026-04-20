@@ -60,7 +60,7 @@ DeviceProcessEvents
 | order by Timestamp desc 
 
 ```
-<img width="1508" src="https://github.com/user-attachments/assets/b13707ae-8c2d-4081-a381-2b521d3a0d8f" alt="Advanced Hunting query result screenshot">
+<img width="1508" src="SOC - Lab Portfolio/threatHuntingStep2-Image.png" alt="Advanced Hunting query result screenshot">
 
 ---
 
@@ -83,7 +83,7 @@ DeviceProcessEvents
 |project Timestamp, DeviceId, DeviceName, AccountName, ActionType, FileName, FolderPath, SHA256, ProcessCommandLine
 
 ```
-<img width="1508" src="SOC - Lab Portfolio/threatHuntingStep2-Image.png" alt="Advanced Hunting query result screenshot">
+<img width="1508" src="SOC - Lab Portfolio/threatHuntingStep3-Image.png" alt="Advanced Hunting query result screenshot">
 
 ---
 
@@ -105,7 +105,7 @@ DeviceNetworkEvents
 
 
 ```
-<img width="1508" src="https://github.com/user-attachments/assets/87a02b5b-7d12-4f53-9255-f5e750d0e3cb" alt="Advanced Hunting query result screenshot">
+<img width="1508" src="SOC - Lab Portfolio/threatHuntingStep4-Image.png" alt="Advanced Hunting query result screenshot">
 
 ---
 
