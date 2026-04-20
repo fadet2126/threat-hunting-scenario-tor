@@ -46,7 +46,7 @@ DeviceFileEvents
 
 ---
 
-### 2. Searched the `DeviceProcessEvents` Table for TOR Browser Execution
+### 2. Searched the `DeviceProcessEvents` Table
 
 //To check if the tor browser was launched:
 The search carried out on the DeviceProcessEvents table indicated that the user “flo” opened the tor browser. Evidence revealed that the tor browser was opened at 13 Apr 2026 15:11:14 . There were other aftermath instances of firefox.exe (Tor) as well as tor.exe spawned.
@@ -66,7 +66,7 @@ DeviceProcessEvents
 ---
 
 
-### 3. Searched the `DeviceProcessEvents` Table
+### 3. Searched the `DeviceProcessEvents` Table for TOR Browser Execution 
 
 Investigating the DeviceProcessEvents table to see if the file was executed:
 A search for any ProcessCommandLline that contained the string “
