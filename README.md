@@ -1,6 +1,6 @@
 # Official [Flo Cyber Security Lab](http://fadet2126.tech/cyber-range) Project
 
-<img width="400" src="" alt="Tor Logo with the onion and a crosshair on it"/>
+<img width="400" src="SOC - Lab Portfolio/tor-browser-icon.jpg" alt="Tor Logo with the onion and a crosshair on it"/>
 
 # Threat Hunt Report: Unauthorized TOR Usage
 - [Scenario Creation](https://github.com/fadet2126/threat-hunting-scenario-tor/blob/main/threat-hunting-scenario-tor-event-creation.md)
