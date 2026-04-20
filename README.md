@@ -160,8 +160,8 @@ DeviceNetworkEvents
 
 ## Summary of Events
 
-- **The user "flo" downloaded and staged the TOR Browser installer. 
-- **The installer was executed using a silent installation method, avoiding user prompts. 
+- The user "flo" downloaded and staged the TOR Browser installer. 
+- *The installer was executed using a silent installation method, avoiding user prompts. 
 - **TOR Browser was launched shortly after installation, confirming successful setup. 
 - **The system established connections to the TOR network, indicating active anonymized browsing. 
 - **Additional encrypted network traffic confirms TOR was used for browsing activity. 
