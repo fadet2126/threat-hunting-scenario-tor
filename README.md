@@ -45,7 +45,27 @@ DeviceFileEvents
 
 ---
 
-### 2. Searched the `DeviceProcessEvents` Table
+### 2. Searched the `DeviceProcessEvents` Table for TOR Browser Execution
+
+//To check if the tor browser was launched:
+The search carried out on the DeviceProcessEvents table indicated that the user “flo” opened the tor browser. Evidence revealed that the tor browser was opened at 13 Apr 2026 15:11:14 . There were other aftermath instances of firefox.exe (Tor) as well as tor.exe spawned.
+
+**Query used to locate events:**
+
+```kql
+DeviceProcessEvents
+| where DeviceName  == "flovmreal"
+| where FileName has_any ("firefox.exe", "tor.exe", "tor-browser.exe", "start-tor-browser.exe", "torbrowser.exe")
+| project Timestamp, DeviceName, AccountName, ActionType, FileName, FolderPath,SHA256, ProcessCommandLine
+| order by Timestamp desc 
+
+```
+<img width="1508" src="https://github.com/user-attachments/assets/b13707ae-8c2d-4081-a381-2b521d3a0d8f" alt="Advanced Hunting query result screenshot">
+
+---
+
+
+### 3. Searched the `DeviceProcessEvents` Table
 
 Investigating the DeviceProcessEvents table to see if the file was executed:
 A search for any ProcessCommandLline that contained the string “
@@ -67,28 +87,9 @@ DeviceProcessEvents
 
 ---
 
-### 3. Searched the `DeviceProcessEvents` Table for TOR Browser Execution
-
-//To check if the tor browser was opened:
-The search carried out on the DeviceProcessEvents table indicated that the user “flo” opened the tor browser. Evidence revealed that the tor browser was opened at 13 Apr 2026 15:11:14 . There were other aftermath instances of firefox.exe (Tor) as well as tor.exe spawned.
-
-**Query used to locate events:**
-
-```kql
-DeviceProcessEvents
-| where DeviceName  == "flovmreal"
-| where FileName has_any ("firefox.exe", "tor.exe", "tor-browser.exe", "start-tor-browser.exe", "torbrowser.exe")
-| project Timestamp, DeviceName, AccountName, ActionType, FileName, FolderPath,SHA256, ProcessCommandLine
-| order by Timestamp desc 
-
-```
-<img width="1508" src="https://github.com/user-attachments/assets/b13707ae-8c2d-4081-a381-2b521d3a0d8f" alt="Advanced Hunting query result screenshot">
-
----
 
 ### 4. Searched the `DeviceNetworkEvents` Table for TOR Network Connections
-
-3.	//To check if the tor browser was used to browse.
+	//To check if the tor browser was used to browse.
 The Search on DeviceNetworkEvents to know whether the tor browser was used to browse, as well as used to browse on the normal internet indicated that the Tor software on the computer (flovmreal by user “flo”)  connected to another Tor server on the internet. The file path shows that it came from a Tor browser installation on the desktop with the IP address 57.131.42.77 Port 9001. The connection was initiated by the process tor.exe, located in the folder c:\users\flo\desktop\tor browser\browser\torbrowser\tor\tor.exe. A couple of other connections were made to sites over port 443.
 
 
