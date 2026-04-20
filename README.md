@@ -61,7 +61,7 @@ DeviceProcessEvents
 | order by Timestamp desc 
 
 ```
-<img width="1508" src="SOC - Lab Portfolio/threatHuntingStep3-Image.png" alt="Advanced Hunting query result screenshot">
+<img width="1508" src="SOC - Lab Portfolio/threatHuntingStep2-Image.png" alt="Advanced Hunting query result screenshot">
 
 ---
 
@@ -84,7 +84,7 @@ DeviceProcessEvents
 |project Timestamp, DeviceId, DeviceName, AccountName, ActionType, FileName, FolderPath, SHA256, ProcessCommandLine
 
 ```
-<img width="1508" src="SOC - Lab Portfolio/threatHuntingStep2-Image.png" alt="Advanced Hunting query result screenshot">
+<img width="1508" src="SOC - Lab Portfolio/threatHuntingStep3-Image.png" alt="Advanced Hunting query result screenshot">
 
 ---
 
