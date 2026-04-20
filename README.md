@@ -1,6 +1,6 @@
 # Official [Flo Cyber Security Lab](http://fadet2126.tech/cyber-range) Project
 
-<img width="400" src="SOC - Lab Portfolio/threatHuntingStep1-Image.png" alt="Tor Logo with the onion and a crosshair on it"/>
+<img width="400" src="" alt="Tor Logo with the onion and a crosshair on it"/>
 
 # Threat Hunt Report: Unauthorized TOR Usage
 - [Scenario Creation](https://github.com/fadet2126/threat-hunting-scenario-tor/blob/main/threat-hunting-scenario-tor-event-creation.md)
@@ -41,7 +41,7 @@ DeviceFileEvents
 | order by Timestamp desc 
 |project Timestamp, DeviceId, DeviceName, ActionType, FileName, SHA256, InitiatingProcessAccountName 
 
-<img width="1212" alt="image" src="https://github.com/user-attachments/assets/71402e84-8767-44f8-908c-1805be31122d">
+<img width="1212" alt="image" src="SOC - Lab Portfolio/threatHuntingStep1-Image.png">
 
 ---
 
