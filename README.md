@@ -41,7 +41,7 @@ DeviceFileEvents
 | order by Timestamp desc 
 |project Timestamp, DeviceId, DeviceName, ActionType, FileName, SHA256, InitiatingProcessAccountName 
 
-<img width="1212" alt="image" src="SOC - Lab Portfolio/threatHuntingStep1-Image.png">
+<img width="1508" alt="image" src="SOC - Lab Portfolio/threatHuntingStep1-Image.png" alt="image of Advanced Hunting query result">
 
 ---
 
@@ -63,7 +63,7 @@ DeviceProcessEvents
 |project Timestamp, DeviceId, DeviceName, AccountName, ActionType, FileName, FolderPath, SHA256, ProcessCommandLine
 
 ```
-<img width="1212" alt="image" src="SOC - Lab Portfolio/threatHuntingStep2-Image.png">
+<img width="1508" src="SOC - Lab Portfolio/threatHuntingStep2-Image.png" alt="Advanced Hunting query result screenshot">
 
 ---
 
@@ -82,7 +82,7 @@ DeviceProcessEvents
 | order by Timestamp desc 
 
 ```
-<img width="1212" alt="image" src="https://github.com/user-attachments/assets/b13707ae-8c2d-4081-a381-2b521d3a0d8f">
+<img width="1508" src="https://github.com/user-attachments/assets/b13707ae-8c2d-4081-a381-2b521d3a0d8f" alt="Advanced Hunting query result screenshot">
 
 ---
 
@@ -104,7 +104,7 @@ DeviceNetworkEvents
 
 
 ```
-<img width="1212" alt="image" src="https://github.com/user-attachments/assets/87a02b5b-7d12-4f53-9255-f5e750d0e3cb">
+<img width="1508" src="https://github.com/user-attachments/assets/87a02b5b-7d12-4f53-9255-f5e750d0e3cb" alt="Advanced Hunting query result screenshot">
 
 ---
 
