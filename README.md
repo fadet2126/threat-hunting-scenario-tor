@@ -144,8 +144,7 @@ DeviceNetworkEvents
 
 ### 5. TOR Network Activity (Browsing Behavior)
 
-- **Timestamps:**
-  - `13 Apr 2026 (post 15:12) ` .
+- **Timestamps:** `13 Apr 2026 (post 15:12) ` .
 - **Event:** The TOR Browser was used to generate outbound encrypted network traffic. 
 - **Action:** Multiple connections detected over TOR-related ports (e.g., 9001) and encrypted web traffic over port 443.
 - **File Path:** `C:\Users\Flo\Desktop\tor browser\browser\torbrowser\tor\tor.exe` 
